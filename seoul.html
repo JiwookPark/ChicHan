@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 여행 블로그</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts에서 font-display 속성 추가 -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="logo"><img src="logo1.png" alt="ChicHan Logo" class="logo-img"></a>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="index.html#about">ChicHan에 대해서</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <h1 class="title" onclick="navigateToMain()">ChicHan</h1>
+        </div>
+    </header>
+
+    <div class="container content">
+        <div class="header">
+            <h1>서울 여행</h1>
+            <p>서울의 아름다운 여행지를 소개합니다</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://source.unsplash.com/400x200/?gyeongbokgung" class="card-img-top" alt="경복궁">
+                    <div class="card-body">
+                        <h5 class="card-title">경복궁</h5>
+                        <p class="card-text">서울의 대표적인 궁궐로, 조선 시대의 역사와 문화를 느낄 수 있는 곳입니다.</p>
+                        <a href="#" class="btn btn-primary">더 알아보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://source.unsplash.com/400x200/?namsan" class="card-img-top" alt="남산">
+                    <div class="card-body">
+                        <h5 class="card-title">남산</h5>
+                        <p class="card-text">서울의 중심에서 도시 전경을 한눈에 볼 수 있는 아름다운 산입니다.</p>
+                        <a href="#" class="btn btn-primary">더 알아보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://source.unsplash.com/400x200/?han-river" class="card-img-top" alt="한강">
+                    <div class="card-body">
+                        <h5 class="card-title">한강</h5>
+                        <p class="card-text">서울을 가로지르는 한강은 다양한 레크리에이션 활동을 즐길 수 있는 공간입니다.</p>
+                        <a href="#" class="btn btn-primary">더 알아보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 서울 여행 블로그. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function navigateToMain() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

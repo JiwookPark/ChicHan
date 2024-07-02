@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChicHan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <!-- Google Fonts에서 font-display 속성 추가 -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="logo"><img src="logo1.png" alt="ChicHan Logo" class="logo-img"></a>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="index.html#about">ChicHan에 대해서</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <h1 class="title" onclick="navigateToMain()">ChicHan</h1>
+        </div>
+    </header>
+    <main id="content">
+        <section id="home" class="page">
+            <div class="intro-container">
+                <h2>환영합니다!</h2>
+                <p>이곳은 ChicHan 클론 사이트의 메인 페이지입니다.</p>
+            </div>
+            <section id="cards">
+                <h2 class="cards-title">地域別のおすすめ</h2>
+                <div class="card-container">
+                    <div class="card" onclick="window.location.href='seoul.html'">
+                        <img src="seoul.jpg" alt="seoul" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">ソウル</h3>
+                            <h4 class="card-subtitle">ソウル Subtitle</h4>
+                            <p class="card-text">ソウル에 대한 설명입니다.</p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="window.location.href='incheon.html'">
+                        <img src="incheon.png" alt="incheon" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">仁川</h3>
+                            <h4 class="card-subtitle"></h4>
+                            <p class="card-text">島、チャイナタウン、セントラルパーク</p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="window.location.href='paju.html'">
+                        <img src="paju.jpg" alt="パジュ" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">パジュ</h3>
+                            <h4 class="card-subtitle"></h4>
+                            <p class="card-text">自然、ドライブ、デート、Cafe</p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="window.location.href='suwon.html'">
+                        <img src="suwon.jpg" alt="スウォン" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">スウォン</h3>
+                            <h4 class="card-subtitle"></h4>
+                            <p class="card-text">日帰り、チキン</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="faq" class="page hidden">
+            <h2>FAQ</h2>
+            <p>자주 묻는 질문 페이지입니다.</p>
+        </section>
+        <section id="about" class="page hidden">
+            <h2>ChicHan에 대해서</h2>
+            <p>ChicHan에 대한 소개 페이지입니다.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 ChicHan 클론. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    function navigateToMain() {
+        window.location.href = 'index.html';
+    }
+</script>
+</html>
